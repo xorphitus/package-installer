@@ -1,0 +1,35 @@
+tap phinze/homebrew-cask || true
+tap homebrew/versions|| true
+update || true
+
+install brew-cask || true
+install git || true
+install ag || true
+install tmux || true
+install tree || true
+install openssl || true
+install readline || true
+install cmake || true
+install zsh || true
+install wget || true
+install curl || true
+install cmake || true
+install automake || true
+
+install phantomjs || true
+install jq || true
+install clisp || true
+install erlang || true
+install leiningen || true
+install heroku-toolbelt || true
+install scala || true
+install haskell-platform || true
+
+cask install keyremap4macbook || true
+cask install dropbox || true
+cask install hipchat || true
+cask install skype || true
+cask install google-chrome || true
+cask install firefox || true
+cask install virtualbox || true
+cask install vagrant || true
