@@ -4,6 +4,7 @@ gem 'rails'
 gem 'guard'
 
 gem 'rubocop'
+gem 'railroady'
 gem 'rcodetools'
 gem 'sass'
 gem 'slim'
