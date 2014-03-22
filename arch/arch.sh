@@ -1,30 +1,88 @@
-sudo tee -a /etc/pacman.conf <<EOF
+#!/bin/bash
 
-[archlinuxfr]
-SigLevel = Never
-Server = http://repo.archlinux.fr/$arch
-EOF
+function install() {
+    pacman -Q $1 > /dev/null 2>&1
+    if [ $? -eq 1 ]; then
+        pacman -S $1
+    fi
+}
 
-sudo pacman --sync --refresh yaourt
-
-# pacman
+function aur() {
+    pacman -Q $1 > /dev/null 2>&1
+    if [ $? -eq 1 ]; then
+        yaourt -S $1
+    fi
+}
 
 # basic tools
-sudo pacman emacs zsh tmux openssl git vim pacman alsa-utils
+install emacs
+install zsh
+install tmux
+install openssl
+install git
+install vim
+install alsa-utils
+install mercurial
+
 # CUI tools
-sudo pacman tree tig the_silver_searcher lsof source-highlight unzip htop dstat iotop
+install tree
+install tig
+install the_silver_searcher
+install lsof
+install source-highlight
+install unzip
+install htop
+install dstat
+install iotop
+
+aur jq
+aur dropbox-cli
+aur emacs-ddskk
+
 # GUI tools
-sudo pacman xorg-xmodmap terminator xpdf-japanese gpicview libreoffice libreoffice-ja gimp vlc hardinfo skype flashplugin firefox-i18n-ja dunst nitrogen
+install xorg-xmodmap
+install terminator
+install gpicview
+install libreoffice-base
+install libreoffice-calc
+install libreoffice-common
+install libreoffice-draw
+install libreoffice-gnome
+install libreoffice-impress
+install libreoffice-math
+install libreoffice-writer
+install libreoffice-ja
+install gimp
+install vlc
+install hardinfo
+install skype
+install flashplugin
+install firefox-i18n-ja
+install dunst
+install nitrogen
 
-# yaourt
-
-# CUI tools
-sudo yaourt -Ss jq dropbox-cli emacs-ddskk
-
-# GUI tools
-sudo yaourt -Ss xmonad xmonad-contrib xmobar ttf-ricty compton nitrogen googe-chrome-beta
+aur xmonad
+aur xmonad-contrib
+aur xmobar
+aur ttf-ricty
+aur compton
+aur nitrogen
+aur google-chrome
 
 # Lang
-sudo pacman -Ss clojure scala gauche clisp
-sudo yaourt -Ss leiningen
+install scala
+install gauche
+install clisp
 
+aur leiningen
+aur haskell-platform
+# for PHP
+aur bison27
+
+# middleware
+install virtualbox
+install vagrant
+# install mariadb
+# install postgresql
+# install mongodb
+# install elasticsearch
