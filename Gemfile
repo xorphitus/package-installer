@@ -14,6 +14,11 @@ gem 'sass'
 gem 'slim'
 gem 'haml'
 
+# for robe
+gem 'pry'
+gem 'pry-doc', '>= 0.6.0'
+gem 'method_source', '>= 0.8.2'
+
 # for heroku-toolbelt
 gem 'heroku-api' if /linux/ =~ RUBY_PLATFORM
 gem 'netrc' if /linux/ =~ RUBY_PLATFORM
