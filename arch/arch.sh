@@ -34,6 +34,7 @@ install unzip
 install htop
 install dstat
 install iotop
+install abcde # media ripper
 
 aur jq
 aur dropbox-cli
@@ -73,6 +74,7 @@ aur google-chrome
 install scala
 install gauche
 install clisp
+install erlang
 
 aur leiningen
 aur haskell-platform
