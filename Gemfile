@@ -5,6 +5,7 @@ gem 'rails'
 gem 'guard'
 
 gem 'rubocop'
+gem 'ruby-lint'
 gem 'railroady'
 gem 'rcodetools'
 # said "rcodetools will work better if you use it along with FastRI"
