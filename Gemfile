@@ -4,6 +4,9 @@ gem 'rake'
 gem 'rails'
 gem 'guard'
 
+gem 'chef'
+gem 'knife-solo'
+
 gem 'rubocop'
 gem 'railroady'
 gem 'rcodetools'

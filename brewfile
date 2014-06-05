@@ -1,9 +1,12 @@
 tap phinze/homebrew-cask || true
-tap homebrew/versions|| true
+tap homebrew/versions || true
+tap homebrew/binary || true
+
 update || true
 
 install brew-cask || true
 install git || true
+install cvs || true
 install ag || true
 install tmux || true
 install tree || true
@@ -33,7 +36,9 @@ install scala || true
 install gauche || true
 install haskell-platform || true
 
+install nginx || true
 install mysql || true
+install packer || true
 
 cask install keyremap4macbook || true
 cask install dropbox || true
