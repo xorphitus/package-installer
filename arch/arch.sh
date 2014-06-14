@@ -84,6 +84,7 @@ aur bison27
 # middleware
 install virtualbox
 install vagrant
+install docker
 # install mariadb
 # install postgresql
 # install mongodb
