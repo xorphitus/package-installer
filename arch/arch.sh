@@ -88,3 +88,7 @@ install vagrant
 # install postgresql
 # install mongodb
 # install elasticsearch
+
+# for Wine
+aur lib32-mesa-full-i965
+
