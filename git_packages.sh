@@ -40,18 +40,6 @@ pyenv local 3.3.4
 pip install -r requirements.txt
 
 ##############################
-# zaw
-if [[ ! -e ~/opt ]]; then
-    mkdir ~/opt
-fi
-
-cd opt
-
-if [[ ! -e ~/opt/zaw ]]; then
-    git clone git://github.com/zsh-users/zaw.git
-fi
-
-##############################
 # clojurescript
 if [[ ! -e ~/opt/clojurescript ]]; then
     git clone git://github.com/clojure/clojurescript.git

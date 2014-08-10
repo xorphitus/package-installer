@@ -39,6 +39,7 @@ install abcde # media ripper
 aur jq
 aur dropbox-cli
 aur emacs-ddskk
+aur peco-git
 
 # GUI tools
 install xorg-xmodmap
@@ -75,6 +76,8 @@ install scala
 install gauche
 install clisp
 install erlang
+
+aur lighttable-git
 
 aur leiningen
 aur haskell-platform
