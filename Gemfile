@@ -6,6 +6,7 @@ gem 'guard'
 
 gem 'chef'
 gem 'knife-solo'
+gem 'foodcritic'
 
 gem 'rubocop'
 gem 'railroady'

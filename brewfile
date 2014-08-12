@@ -1,6 +1,7 @@
 tap phinze/homebrew-cask || true
 tap homebrew/versions || true
 tap homebrew/binary || true
+tap peco/peco || true
 
 update || true
 
@@ -20,6 +21,7 @@ install cmake || true
 install automake || true
 install cmigemo || true
 install coreutils || true
+install peco || true
 
 # for php
 install bison27 || true
@@ -40,6 +42,8 @@ install nginx || true
 install mysql || true
 install packer || true
 
+cask install lighttable || true
+
 cask install keyremap4macbook || true
 cask install dropbox || true
 cask install hipchat || true
@@ -53,3 +57,5 @@ cask install sequel-pro || true
 cask install wireshark || true
 cask install genymotion || true
 cask install racket || true
+# for fiddler
+cask install mono-mdk || true
