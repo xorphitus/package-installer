@@ -40,6 +40,7 @@ aur jq
 aur dropbox-cli
 aur emacs-ddskk
 aur peco-git
+aur cmigemo-git
 
 # GUI tools
 install xorg-xmodmap
