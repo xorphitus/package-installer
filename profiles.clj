@@ -2,4 +2,6 @@
                        [org.clojure/tools.trace "RELEASE"]
                        [criterium "0.4.3"]]
         :aliases {"slamhound" ["run" "-m" "slam.hound"]}
-        :plugins [[lein-kibit "RELEASE"]]}}
+        :plugins [[lein-kibit "RELEASE"]
+                  [cider/cider-nrepl "0.9.0-SNAPSHOT"]]}}
+
