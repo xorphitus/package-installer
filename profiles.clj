@@ -4,5 +4,5 @@
                        [criterium "0.4.3"]]
         :aliases {"slamhound" ["run" "-m" "slam.hound"]}
         :plugins [[lein-kibit "RELEASE"]
-                  [cider/cider-nrepl "0.9.0-SNAPSHOT"]]}}
+                  [cider/cider-nrepl "0.10.0-SNAPSHOT"]]}}
 
