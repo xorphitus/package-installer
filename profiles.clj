@@ -1,4 +1,5 @@
-{:user {:dependencies [[slamhound "RELEASE"]
+{:user {:dependencies [[org.clojure/tools.nrepl "0.2.7"]
+                       [slamhound "RELEASE"]
                        [org.clojure/tools.trace "RELEASE"]
                        [criterium "0.4.3"]]
         :aliases {"slamhound" ["run" "-m" "slam.hound"]}
