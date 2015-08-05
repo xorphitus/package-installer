@@ -4,10 +4,6 @@ gem 'rake'
 gem 'rails'
 gem 'guard'
 
-gem 'chef'
-gem 'knife-solo'
-gem 'foodcritic'
-
 gem 'rubocop'
 gem 'railroady'
 gem 'rcodetools'
@@ -19,7 +15,7 @@ gem 'haml'
 
 # for robe
 gem 'pry'
-gem 'pry-doc', '>= 0.6.0'
+gem 'pry-doc'
 gem 'method_source', '>= 0.8.2'
 
 # for heroku-toolbelt
